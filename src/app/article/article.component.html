@@ -1,0 +1,7 @@
+<div class="border-1">
+  <p>Article List Component</p>
+  <h2 *ngIf="favoriteArticle">Mon article préféré est: {{favoriteArticle}}</h2>
+  <app-list (voteEmetteur)="voteEmit($event)" [title] ="'L\'annonce du nouveau pokemon Eau'" [description]="'Le nouveau pokemon est de sortie'" [image]="'fb_pokemon-8.jpg'"></app-list>
+  <app-list (voteEmetteur)="voteEmit($event)" [title] ="'Le One Piece enfin révélé'" [description]="'Le manga du célèbre auteur japonais revele son plus grand secret'" [image]="'onepiece.webp'"></app-list>
+  <app-list (voteEmetteur)="voteEmit($event)" [title] ="'La mort de josé Cameron'" [description]="'Le réalisateur connus pour les plus grand film portugais au monde vient de décéder'" [image]="'cameron.jpg'"></app-list>
+</div>
